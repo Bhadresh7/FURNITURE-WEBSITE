@@ -23,9 +23,6 @@
   color: var(--text-color);
   max-width: 25rem;
 }
-#content {
-  padding: 1rem;
-}
 
 #content-container {
   font-family: var(--font1);
@@ -75,17 +72,13 @@
   padding-top: 1rem;
 }
 #card-container button:hover img {
-  margin-left: 15px;
+  transform: translate(20%);
   transition: all 0.3s ease;
 }
 #card-container button:hover {
   color: var(--yellow);
   transition: all 0.3s ease;
 }
-#card-container button img {
-  margin-left: 12px;
-}
-
 #image-section{
   display: flex;
   align-items: center;

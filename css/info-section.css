@@ -17,11 +17,9 @@
   color: var(--yellow);
 }
 
-
-#image{
-   max-width: 100%;
+#image {
+  max-width: 100%;
 }
-
 
 #info-section {
   margin-top: 5rem;
@@ -35,5 +33,34 @@
 }
 
 #content h1 {
-  font-size: clamp(30px, 5vw, 35px);
+  font-size: clamp(35px, 5vw, 40px);
+  font-weight: 600;
+  line-height: 3rem;
+}
+#content img {
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+}
+
+#left-section h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+#left-section p {
+  font-family: var(--font2);
+  font-size: clamp(12px, 5vw, 15px);
+  color: var(--text-color);
+  max-width: 23rem;
+  line-height: 1.5rem;
+}
+
+#left-section button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--font2);
+  font-size: clamp(12px, 5vw, 15px);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
