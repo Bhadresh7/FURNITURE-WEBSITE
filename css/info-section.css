@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+}
+
+#info-section {
+  font-family: var(--font1);
+}
+#info-section span {
+  color: var(--yellow);
+}
+
+
+#image{
+   max-width: 100%;
+}
+
+
+#info-section {
+  margin-top: 5rem;
+}
+
+#content p {
+  max-width: 30rem;
+  font-size: clamp(10px, 5vw, 12px);
+  font-family: var(--font2);
+  color: var(--text-color);
+}
+
+#content h1 {
+  font-size: clamp(30px, 5vw, 35px);
+}
