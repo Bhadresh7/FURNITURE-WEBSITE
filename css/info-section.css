@@ -17,9 +17,7 @@
   color: var(--yellow);
 }
 
-#image {
-  max-width: 100%;
-}
+
 
 #info-section {
   margin-top: 5rem;
@@ -51,7 +49,6 @@
   font-family: var(--font2);
   font-size: clamp(12px, 5vw, 15px);
   color: var(--text-color);
-  max-width: 23rem;
   line-height: 1.5rem;
 }
 
@@ -64,3 +61,18 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+#left-section button img{
+  margin-left: 10px;
+}
+
+#left-section button:hover {
+  color: var(--yellow);
+  transition: all .3s ease;
+}
+
+#left-section button:hover img{
+  transform:translateX(20%);
+  transition: all .3s ease;
+}
+
+

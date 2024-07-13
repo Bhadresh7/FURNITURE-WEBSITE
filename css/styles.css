@@ -39,6 +39,7 @@
   font-family: var(--font1);
   color: var(--black);
   font-weight: 400;
+  font-size: clamp(30px, 5vw, 55px);
 }
 
 #para {
@@ -101,6 +102,10 @@
   .display-4 br {
     display: none;
   }
+  .display-4 {
+    padding-top: 5rem;
+  }
+
   #para {
     max-width: 40rem;
   }

@@ -79,6 +79,10 @@
   color: var(--yellow);
   transition: all 0.3s ease;
 }
+#card-container button img {
+  margin-left: 12px;
+}
+
 #image-section{
   display: flex;
   align-items: center;
