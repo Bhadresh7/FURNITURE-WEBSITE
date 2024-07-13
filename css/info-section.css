@@ -9,18 +9,17 @@
   --font2: "Roboto", sans-serif;
   --white: #fff;
 }
-
 #info-section {
   font-family: var(--font1);
+  margin-top: 5rem;
 }
+
 #info-section span {
   color: var(--yellow);
 }
 
-
-
-#info-section {
-  margin-top: 5rem;
+#content {
+  padding-right: 2rem; 
 }
 
 #content p {
@@ -35,24 +34,28 @@
   font-weight: 600;
   line-height: 3rem;
 }
+
 #content img {
   padding-top: 0.5rem;
   padding-bottom: 4rem;
 }
 
-#left-section h4 {
+
+#right-section h4 {
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
-#left-section p {
+#right-section p {
   font-family: var(--font2);
   font-size: clamp(12px, 5vw, 15px);
   color: var(--text-color);
   line-height: 1.5rem;
+  max-width: 80%;
+  overflow-wrap: break-word; 
 }
 
-#left-section button {
+#right-section button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -61,18 +64,39 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
-#left-section button img{
+
+#right-section button img {
   margin-left: 10px;
 }
 
-#left-section button:hover {
+#right-section button:hover {
   color: var(--yellow);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-#left-section button:hover img{
-  transform:translateX(20%);
-  transition: all .3s ease;
+#right-section button:hover img {
+  transform: translateX(20%);
+  transition: all 0.3s ease;
 }
 
+.offset-section {
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+.offset-lg-1 {
+  margin-left: 4%;
+}
 
+#gallery-section {
+  font-family: var(--font1);
+}
+#gallery-section span{
+color: var(--yellow);
+}
+
+@media(max-width:750px){
+  #image{
+    display: none;
+  }
+}
