@@ -79,13 +79,10 @@
   transition: all 0.3s ease;
 }
 
-.offset-section {
+#offset-section {
   padding-top: 2rem;
   padding-left: 5rem;
   padding-bottom: 2rem;
-}
-.offset-lg-1 {
-  margin-left: 4%;
 }
 
 #gallery-section {
@@ -94,6 +91,7 @@
 #gallery-section span{
 color: var(--yellow);
 }
+
 
 @media(max-width:750px){
   #image{

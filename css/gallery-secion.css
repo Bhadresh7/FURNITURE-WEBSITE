@@ -95,13 +95,13 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.card-container{
+.card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   padding-top: 1rem;
 }
-  
+
 #cards {
   display: flex;
   align-items: center;
@@ -114,11 +114,20 @@
 #cards:hover {
   background-color: var(--yellow);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 #cards:hover h1 {
   color: var(--white);
   transition: all 0.3s ease;
+}
+
+#cards img{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+
 }
 
 #cards:hover p {
@@ -133,4 +142,10 @@
 #cards:hover img {
   transition: all 0.3s ease;
   filter: brightness(0) invert(1);
+}
+
+@media (width <500px) {
+  #cards {
+    width: 100%;
+  }
 }
