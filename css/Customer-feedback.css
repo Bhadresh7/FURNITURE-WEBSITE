@@ -30,7 +30,7 @@
 #info p {
   font-size: clamp(12px, 5vw, 13px);
 }
-@media (width<900px) {
+@media (width<1000px) {
   #person-image {
     display: none;
   }
