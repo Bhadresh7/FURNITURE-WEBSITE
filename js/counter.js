@@ -7,7 +7,6 @@ container.forEach((e) => {
 
   var start = 0;
   var end = parseInt(dataValue);
-  // var end = 100;
   var count = start;
 
   var counter = setInterval(() => {

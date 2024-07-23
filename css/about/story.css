@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+}
+
+
+.story-section h3 {
+  font-family: var(--font1);
+  font-weight: 500;
+  span {
+    color: var(--yellow);
+  }
+}
+
+.story-section p {
+  color: var(--text-color);
+  font-size: clamp(12px, 5vw, 13px);
+}
+
+.story-section img {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+#content-container p {
+  max-width: 30rem;
+  font-size: clamp(12px, 5vw, 15px);
+}
+#content-container h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.first-para,
+.second-para {
+  line-height: 2rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem ;
+  font-family: var(--font1);
+
+  p {
+    font-family: var(--font2);
+    font-weight: 400;
+  }
+}
+
+
+
+#cards:hover  {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+#cards:hover p{
+  color: var(--white);
+}
+
+#cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 10rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+#cards:hover img{
+  filter: brightness(0) invert(1);
+}
