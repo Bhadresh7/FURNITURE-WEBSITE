@@ -10,6 +10,11 @@
   --white: #fff;
 }
 
+
+.margin-top{
+  margin-top: 5rem;
+}
+
 body,
 html {
   overflow-x: hidden;
