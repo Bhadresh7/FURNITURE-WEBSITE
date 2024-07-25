@@ -82,6 +82,7 @@
 
 #btn-container {
   background-color: var(--yellow);
+  min-width: 50%;
 }
 
 #btn-container img {
