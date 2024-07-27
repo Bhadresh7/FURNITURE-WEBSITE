@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+  --success: #4bd3e3;
+  --info: #4f63dc;
+  --warning: #f4e800;
+  --danger: #f54a40;
+  --primary: #f8b600;
+  --disabled: #469af4;
+}
+
+.custom-container {
+  max-width: 1140px;
+  margin: auto;
+  width: 85%;
+}
+.custom-container h5 {
+  font-weight: bold;
+}
+
+.para {
+  font-size: clamp(12px, 5vw, 14px);
+  color: var(--text-color);
+}
+
+#left-section h1,
+h5 {
+  font-family: var(--font1);
+  font-weight: 400;
+}
+.text-area h5,
+.btn-area h5 {
+  font-weight: 600;
+}
+
+b,
+i,
+strike,
+sub,
+sup,
+u {
+  color: var(--yellow);
+}
+
+.text-area p {
+  color: var(--text-color);
+  font-size: clamp(13px, 5vw, 14px);
+  line-height: 1.5rem;
+}
+
+.margin-top {
+  margin-top: 10rem;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}
+
+.margin-bottom {
+  margin-bottom: 10rem;
+}
+
+#btn-section a,
+#btn-section2 a,
+#rounded-btn a,
+#rounded-btn2 a,
+#rounded-btn-arrow a {
+  padding: 1rem;
+  min-width: 6rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#btn-section,
+#btn-section2,
+#rounded-btn,
+#rounded-btn2,
+#rounded-btn-arrow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/* button section 1 */
+
+#btn-section a:nth-child(2) {
+  color: var(--white);
+  background-color: var(--primary);
+}
+#btn-section a:nth-child(3) {
+  color: var(--white);
+  background-color: var(--success);
+}
+#btn-section a:nth-child(4) {
+  color: var(--white);
+  background-color: var(--info);
+}
+#btn-section a:nth-child(5) {
+  color: var(--white);
+  background-color: var(--warning);
+}
+#btn-section a:nth-child(6) {
+  color: var(--white);
+  background-color: var(--danger);
+}
+#btn-section a:nth-child(7) {
+  text-decoration: underline;
+}
+
+/* button section 2 */
+
+#btn-section2 a:nth-child(2) {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+#btn-section2 a:nth-child(3) {
+  background: transparent;
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+#btn-section2 a:nth-child(4) {
+  background: transparent;
+  border: 1px solid var(--info);
+  color: var(--info);
+}
+#btn-section2 a:nth-child(5) {
+  background: transparent;
+  border: 1px solid var(--warning);
+  color: var(--warning);
+}
+#btn-section2 a:nth-child(6) {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+/* hover effects for btn-section */
+
+#btn-section a:nth-child(2):hover {
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid var(--primary);
+}
+#btn-section a:nth-child(3):hover {
+  color: var(--success);
+  background: transparent;
+  border: 1px solid var(--success);
+}
+#btn-section a:nth-child(4):hover {
+  color: var(--info);
+  background: transparent;
+  border: 1px solid var(--info);
+}
+#btn-section a:nth-child(5):hover {
+  color: var(--warning);
+  background: transparent;
+  border: 1px solid var(--warning);
+}
+#btn-section a:nth-child(6):hover {
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid var(--danger);
+}
+
+/* hover effect for btn-section  */
+
+#btn-section2 a:nth-child(2):hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+#btn-section2 a:nth-child(3):hover {
+  background-color: var(--success);
+  color: var(--white);
+}
+#btn-section2 a:nth-child(4):hover {
+  background-color: var(--info);
+  color: var(--white);
+}
+#btn-section2 a:nth-child(5):hover {
+  background-color: var(--warning);
+  color: var(--white);
+}
+#btn-section2 a:nth-child(6):hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+/* styles for disabled button  */
+
+#btn-section2 a:nth-child(8):hover,
+#btn-section a:nth-child(8):hover,
+#rounded-btn a:nth-child(8):hover,
+#rounded-btn2 a:nth-child(8):hover {
+  cursor: no-drop;
+}
+
+#btn-section a:nth-child(8),
+#btn-section2 a:nth-child(8),
+#rounded-btn a:nth-child(8),
+#rounded-btn2 a:nth-child(8) {
+  color: var(--disabled);
+}
+
+/* rounded-btn styles */
+
+#rounded-btn a:nth-child(2) {
+  background-color: var(--primary);
+  border-radius: 30px;
+  color: var(--white);
+}
+#rounded-btn a:nth-child(3) {
+  background-color: var(--success);
+  border-radius: 30px;
+  color: var(--white);
+}
+#rounded-btn a:nth-child(4) {
+  background-color: var(--info);
+  border-radius: 30px;
+  color: var(--white);
+}
+#rounded-btn a:nth-child(5) {
+  background-color: var(--warning);
+  border-radius: 30px;
+  color: var(--white);
+}
+#rounded-btn a:nth-child(6) {
+  background-color: var(--danger);
+  border-radius: 30px;
+  color: var(--white);
+}
+
+/* hover effect for rounded buttons */
+
+#rounded-btn a:nth-child(2):hover {
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid var(--primary);
+}
+#rounded-btn a:nth-child(3):hover {
+  color: var(--success);
+  background: transparent;
+  border: 1px solid var(--success);
+}
+#rounded-btn a:nth-child(4):hover {
+  color: var(--info);
+  background: transparent;
+  border: 1px solid var(--info);
+}
+#rounded-btn a:nth-child(5):hover {
+  color: var(--warning);
+  background: transparent;
+  border: 1px solid var(--warning);
+}
+#rounded-btn a:nth-child(6):hover {
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid var(--danger);
+}
+
+/*  styles for rounded-btn 2  */
+#rounded-btn2 a:nth-child(2) {
+  border: 1px solid var(--primary);
+  border-radius: 30px;
+  color: var(--primary);
+}
+#rounded-btn2 a:nth-child(3) {
+  border: 1px solid var(--success);
+  border-radius: 30px;
+  color: var(--success);
+}
+#rounded-btn2 a:nth-child(4) {
+  border: 1px solid var(--info);
+  border-radius: 30px;
+  color: var(--info);
+}
+#rounded-btn2 a:nth-child(5) {
+  border: 1px solid var(--warning);
+  border-radius: 30px;
+  color: var(--warning);
+}
+#rounded-btn2 a:nth-child(6) {
+  border: 1px solid var(--danger);
+  border-radius: 30px;
+  color: var(--danger);
+}
+
+/* hover effect for the rounded btn */
+
+#rounded-btn a:nth-child(2):hover {
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid var(--primary);
+}
+#rounded-btn a:nth-child(3):hover {
+  color: var(--success);
+  background: transparent;
+  border: 1px solid var(--success);
+}
+#rounded-btn a:nth-child(4):hover {
+  color: var(--info);
+  background: transparent;
+  border: 1px solid var(--info);
+}
+#rounded-btn a:nth-child(5):hover {
+  color: var(--warning);
+  background: transparent;
+  border: 1px solid var(--warning);
+}
+#rounded-btn a:nth-child(6):hover {
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid var(--danger);
+}
+
+/*  styles for rounded-btn 2  */
+
+#rounded-btn2 a:nth-child(2):hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+#rounded-btn2 a:nth-child(3):hover {
+  background-color: var(--success);
+  color: var(--white);
+}
+#rounded-btn2 a:nth-child(4):hover {
+  background-color: var(--info);
+  color: var(--white);
+}
+#rounded-btn2 a:nth-child(5):hover {
+  background-color: var(--warning);
+  color: var(--white);
+}
+#rounded-btn2 a:nth-child(6):hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
