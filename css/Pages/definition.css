@@ -27,11 +27,11 @@
   color: var(--text-color);
   line-height: 1.8rem;
 }
-.definition-section h4 {
+.definition-section h4,
+.list-section > h4 {
   font-family: var(--font1);
   font-size: clamp(1.6rem, 5vw, 1.7rem);
   font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 .definition-section h5 {
@@ -41,7 +41,7 @@
 .blockquote-section h4 {
   font-family: var(--font1);
   font-weight: 600;
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(1.5rem, 5vw, 1.7rem);
   margin-bottom: 1.5rem;
 }
 
@@ -52,7 +52,7 @@
   padding: 30px 50px 30px 30px;
 }
 
-.table-section h4 {
+.table-section > h4 {
   font-family: var(--font1);
   font-weight: 900;
 }
@@ -62,28 +62,127 @@
   padding: 15px 0px 30px 0px;
 }
 
-.progress-bar{
+.progress-bar {
   height: 5px;
 }
 
-.progress-bar-container{
+.progress-bar-container {
   margin-top: 1rem;
 }
 
-.progress{
- height: .3rem !important ;
- background-color: var(--white) !important;
+.progress {
+  height: 0.3rem !important ;
+  background-color: var(--white) !important;
 }
 
-td{
+td {
   color: var(--text-color);
 }
-td span{
+td span {
   margin-left: 1rem;
+}
+
+.image-height {
+  margin-top: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 200px;
+}
+
+.image-gallary a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease 0s;
+}
+.heading {
+  font-family: var(--font1);
+  color: var(--text-color);
+  line-height: 2.6rem;
+}
+
+ul {
+  padding-left: 1rem !important;
+}
+
+li {
+  color: var(--text-color);
+}
+
+ol li,
+ul li {
+  font-size: clamp(12px, 5vw, 15px);
+  line-height: 2rem;
+}
+
+#lists li::marker {
+  content: "📀";
+}
+#lists li::marker {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.type,
+.form-elements h4 {
+  font-family: var(--font1);
+  font-size: clamp(1.6rem, 5vw, 1.7rem);
+  font-weight: 600;
+}
+
+.form-elements > div {
+  padding-left: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+}
+
+select {
+  background-color: rgb(243, 243, 243);
+}
+.switch-wrap {
+  max-width: 15rem;
+}
+textarea {
+  border: none;
+  outline: none;
+  background-color: rgb(243, 243, 243);
+}
+
+.address-info {
+  position: relative;
+}
+
+#icon {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  filter: brightness(50%);
+  padding-left: 0.5rem;
+}
+select,
+select option {
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+}
+
+select option:hover {
+  color: var(--primary);
+  background-color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.address-info input::placeholder {
+  padding-left: 1.5rem;
 }
 
 @media (max-width: 991px) {
   .progress-table-wrap {
-      overflow-x: scroll;
+    overflow-x: scroll;
   }
 }
