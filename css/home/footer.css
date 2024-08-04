@@ -30,6 +30,8 @@ footer p {
 
 footer input {
   padding: 0.5rem;
+  border: none;
+  outline: none;
 }
 
 footer button > img {

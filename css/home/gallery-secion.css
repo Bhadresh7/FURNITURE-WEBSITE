@@ -47,7 +47,7 @@
 
 .text-container p {
   max-width: 30rem;
-  font-size: clamp(10px, 5vw, 12px);
+  font-size: clamp(12px, 5vw, 13px);
   color: #777777;
 }
 
@@ -100,6 +100,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding-top: 1rem;
+  justify-content: space-evenly;
 }
 
 #cards {
@@ -107,7 +108,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid rgb(198, 198, 198);
+  border: 1px solid rgb(236, 236, 236);
   padding: 1rem;
 }
 
@@ -122,12 +123,11 @@
   transition: all 0.3s ease;
 }
 
-#cards img{
-  display:flex;
+#cards img {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
-
 }
 
 #cards:hover p {

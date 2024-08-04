@@ -24,7 +24,7 @@
 
 #content p {
   max-width: 30rem;
-  font-size: clamp(10px, 5vw, 12px);
+  font-size: clamp(12px, 5vw, 13px);
   font-family: var(--font2);
   color: var(--text-color);
 }
