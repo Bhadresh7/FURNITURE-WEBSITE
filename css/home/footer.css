@@ -24,7 +24,7 @@ footer {
 
 footer p {
   color: var(--text-color);
-  font-size: clamp(12px, 5vw, 13px);
+  font-size: clamp(13px, 5vw, 14px);
   max-width: 25rem;
 }
 
@@ -33,11 +33,6 @@ footer input {
   border: none;
   outline: none;
 }
-
-footer button > img {
-  transform: rotate(90deg);
-}
-
 footer button {
   background-color: var(--yellow);
   border: none;

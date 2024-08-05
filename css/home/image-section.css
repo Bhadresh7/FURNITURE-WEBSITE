@@ -96,7 +96,7 @@
   margin-left: 12px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .image-container {
     display: flex;
     flex-direction: column;
@@ -106,5 +106,6 @@
   #card-container {
     position: relative;
     margin-top: 1rem;
+    min-width: 100%;
   }
 }
