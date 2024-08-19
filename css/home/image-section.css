@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+}
+
+#image-section {
+  font-family: var(--font1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#image-section h1 span {
+  color: var(--yellow);
+}
+
+#content-container p {
+  font-size: clamp(10px, 5vw, 12px);
+  font-family: var(--font2);
+  color: var(--text-color);
+  max-width: 25rem;
+}
+
+#content-container {
+  font-family: var(--font1);
+  margin-top: 10%;
+}
+
+#content-container h1 span {
+  color: var(--yellow);
+}
+
+.image-container {
+  position: relative;
+  margin-top: 12%;
+  display: flex;
+  align-items: center;
+}
+
+#arrow {
+  margin-top: 2%;
+}
+
+#card-container {
+  position: absolute;
+  padding: 2rem;
+  background-color: var(--white);
+  max-width: 25rem;
+  bottom: 0;
+}
+
+#card-container p {
+  font-family: var(--font2);
+  font-size: clamp(10px, 5vw, 12px);
+  color: var(--yellow);
+}
+
+#card-container h3 {
+  font-family: var(--font1);
+  font-weight: 600;
+  color: var(--black);
+  font-size: clamp(20px, 5vw, 25px);
+  max-width: 20rem;
+}
+
+#card-container button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: clamp(12px, 5vw, 15px);
+  font-weight: 500;
+  font-family: var(--font2);
+  padding-top: 1rem;
+}
+
+#card-container button:hover img {
+  transform: translate(20%);
+  transition: all 0.3s ease;
+}
+
+#card-container button:hover {
+  color: var(--yellow);
+  transition: all 0.3s ease;
+}
+
+#card-container button img {
+  margin-left: 12px;
+}
+
+@media (max-width: 500px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #card-container {
+    position: relative;
+    margin-top: 1rem;
+    min-width: 100%;
+  }
+}

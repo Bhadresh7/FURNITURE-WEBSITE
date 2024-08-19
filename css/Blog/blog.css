@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+  --border: #dcdcdc;
+}
+
+#Blog-section {
+  margin-top: 5rem;
+}
+.text a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: clamp(12px, 5vw, 15px);
+}
+
+.text a span {
+  color: var(--yellow);
+}
+
+.links-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.text a:hover {
+  transition: all 0.2s ease-in-out;
+  color: var(--yellow);
+}
+
+#middle-section img {
+  margin-bottom: 1rem;
+}
+
+#middle-section h4 {
+  font-family: var(--font1);
+  font-weight: 600;
+}
+
+#middle-section p {
+  font-size: clamp(13px, 5vw, 14px);
+  line-height: 1.5rem;
+  color: var(--text-color);
+}
+
+#middle-section a {
+  border: 1px solid #eeeeee;
+  background: #f9f9ff;
+  padding: 0px 32px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  color: #222222;
+  line-height: 34px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#middle-section a:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+
+#input-container input {
+  padding: 0.5rem;
+  background-color: var(--yellow);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+#input-container input::placeholder {
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+#input-container {
+  position: relative;
+  max-width: 20rem;
+}
+
+#input-container img {
+  position: absolute;
+  bottom: 0;
+  left: 85%;
+  top: 25%;
+}
+
+#right-border{
+  padding: 30px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+.links a {
+  filter: invert();
+}
+
+#profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#popular-post {
+  background-color: var(--yellow);
+  max-width: 100%;
+  padding: 0.5rem;
+  color: var(--white);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-family: var(--font1);
+  font-weight: 800;
+  margin: auto;
+  text-align: center;
+}
+
+.image-section a,
+.image-section a:hover {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--font1);
+  font-weight: 700;
+}
+
+.image-section {
+  display: flex;
+}
+
+.space {
+  margin-left: 1.5rem;
+  p {
+    font-size: clamp(12px, 5vw, 13px);
+    color: var(--text-color);
+  }
+}
+
+li a {
+  display: flex;
+  justify-content: space-between;
+}
+
+li::marker {
+  content: "";
+}
+
+#post-catgories a {
+  text-decoration: none;
+  color: var(--black);
+  margin-top: 0.5rem;
+  border-bottom: 1px dotted #e6e6e6;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#post-catgories a:hover {
+  color: var(--yellow);
+  transition: all 0.2s ease;
+}
+
+#input-area i {
+  bottom: 0;
+  left: 2%;
+  top: 1%;
+}
+
+#links-section a {
+  text-decoration: none;
+  color: var(--black);
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  font-size: 12px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#links-section a:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter-section button {
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-size: 12px;
+}
+
+#input-area input {
+  border: 1px solid rgb(209, 209, 209);
+  outline: none;
+}
+
+#input-area p,
+.newsletter-section p {
+  color: var(--text-color);
+  line-height: 1.5rem;
+}
+
+#profile-section h5 {
+  font-family: var(--font1);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#profile-section h6 {
+  font-weight: normal;
+  font-family: var(--font2);
+  color: var(--text-color);
+  font-size: clamp(13px, 5vw, 14px);
+}
+
+#input-area p {
+  font-size: clamp(11px, 5vw, 12px);
+  font-family: var(--font2);
+}
+
+#info {
+  font-family: var(--font2);
+  font-size: clamp(12px, 5vw, 14px);
+}
+
+#post-catgories p {
+  color: var(--text-color);
+}
+#post-catgories p:hover {
+  color: var(--yellow);
+  transition: all 0.2s ease-in-out;
+}
+
+#input-area input {
+  padding: 0.5rem;
+}
+
+.pagination-container {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-link {
+  color: var(--black) !important;
+  border: none !important;
+}
+
+.page-link:hover {
+  background-color: var(--yellow) !important;
+  color: var(--white) !important;
+}
+
+.page-item.active .page-link {
+  background-color: var(--yellow) !important;
+  color: var(--white) !important;
+}
+
+hr {
+  color: rgb(209, 209, 209) !important;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container > input {
+  padding: 0.5rem;
+  min-width: 100%;
+  border-radius: 30px;
+  background-color: var(--yellow);
+  border: none;
+  outline: none;
+  color: var(--white);
+}
+
+.input-container > input::placeholder {
+  color: var(--white);
+  padding-left: 1rem;
+}
+
+.input-container > img {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+#right-para {
+  text-align: center;
+  font-size: clamp(0.857rem, 2vw, 0.2rem);
+  line-height: 1.5rem;
+  color: var(--text-color);
+}

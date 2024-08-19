@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .links-container {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 100%;
+            max-width: 30%;
+            background-color: #000;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: right 0.4s ease-in-out;
+            z-index: 101;
+        }
+
+        .links-container.open {
+            right: 0;
+        }
+
+        .links-container a {
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 102;
+        }
+
+        .close-icon {
+            display: none;
+            fill: #fff;
+        }
+
+        .links-container.open .close-icon {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <svg id="menu-icon" class="menu-icon open-icon" xmlns="http://www.w3.org/2000/svg" height="32px"
+                viewBox="0 -960 960 960" width="32px" fill="#000000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <svg id="close-icon" class="menu-icon close-icon" xmlns="http://www.w3.org/2000/svg" height="32px"
+                viewBox="0 -960 960 960" width="32px" fill="#000000">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
+        <div class="links-container" id="links-container">
+            <a href="#" class="home-link">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const linksContainer = document.getElementById('links-container');
+
+        menuIcon.addEventListener('click', () => {
+            linksContainer.classList.add('open');
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', () => {
+            linksContainer.classList.remove('open');
+            menuIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+}
+
+.margin-top {
+  margin-top: 10rem;
+}
+.margin-bottom {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10rem;
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
+input {
+  padding: 0.4rem;
+}
+
+#info-section i {
+  font-size: 23px;
+  color: var(--yellow);
+}
+
+#content-section {
+  margin-left: 1rem;
+}
+#content-section p {
+  line-height: 1rem;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+}
+#content-section p:nth-child(1) {
+  font-weight: 600;
+  font-family: var(--font1);
+}
+
+#content-section p:nth-child(2) {
+  color: var(--text-color);
+  font-size: clamp(14px, 5vw, 15px);
+  font-family: var(--font2);
+}
+
+#btn button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: clamp(12px, 5vw, 13px);
+  background-color: var(--yellow);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: var(--white);
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: var(--font2);
+}
+
+#btn {
+  display: flex;
+  justify-content: end;
+}
+
+#btn button:hover {
+  background-color: transparent;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  transition: all 0.3s ease;
+}
+
+input,
+textarea {
+  border: 1px solid #dfdfdf;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: clamp(12px, 5vw, 13px);
+  font-family: var(--font2);
+  color: var(--text-color);
+}
+
+@media (width < 768px) {
+  .textarea {
+    margin-top: 1rem;
+  }
+}

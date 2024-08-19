@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+  --success: #4bd3e3;
+  --info: #4f63dc;
+  --warning: #f4e800;
+  --danger: #f54a40;
+  --primary: #f8b600;
+  --disabled: #469af4;
+}
+
+#right-align {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.definition-section p {
+  font-size: clamp(12px, 5vw, 14px);
+  color: var(--text-color);
+  line-height: 1.8rem;
+}
+.definition-section h4,
+.list-section > h4 {
+  font-family: var(--font1);
+  font-size: clamp(1.6rem, 5vw, 1.7rem);
+  font-weight: 600;
+}
+
+.definition-section h5 {
+  margin-bottom: 0.7rem;
+}
+
+.blockquote-section h4 {
+  font-family: var(--font1);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 5vw, 1.7rem);
+  margin-bottom: 1.5rem;
+}
+
+.blockquote-section p {
+  color: var(--text-color);
+  font-size: clamp(14px, 5vw, 15px);
+  border-left: 2px solid var(--primary);
+  padding: 30px 50px 30px 30px;
+}
+
+.table-section > h4 {
+  font-family: var(--font1);
+  font-weight: 900;
+}
+
+.table-section {
+  min-width: 800px;
+  padding: 15px 0px 30px 0px;
+}
+
+.progress-bar {
+  height: 5px;
+}
+
+.progress-bar-container {
+  margin-top: 1rem;
+}
+
+.progress {
+  height: 0.3rem !important ;
+  background-color: var(--white) !important;
+}
+
+td {
+  color: var(--text-color);
+}
+td span {
+  margin-left: 1rem;
+}
+
+.image-height {
+  margin-top: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 200px;
+}
+
+.image-gallary a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease 0s;
+}
+.heading {
+  font-family: var(--font1);
+  color: var(--text-color);
+  line-height: 2.6rem;
+}
+
+ul {
+  padding-left: 1rem !important;
+}
+
+li {
+  color: var(--text-color);
+}
+
+ol li,
+ul li {
+  font-size: clamp(12px, 5vw, 15px);
+  line-height: 2rem;
+}
+
+#lists li::marker {
+  content: "📀";
+}
+#lists li::marker {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.type,
+.form-elements h4 {
+  font-family: var(--font1);
+  font-size: clamp(1.6rem, 5vw, 1.7rem);
+  font-weight: 600;
+}
+
+.form-elements > div {
+  padding-left: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+}
+
+select {
+  background-color: rgb(243, 243, 243);
+}
+.switch-wrap {
+  max-width: 15rem;
+}
+textarea {
+  border: none;
+  outline: none;
+  background-color: rgb(243, 243, 243);
+}
+
+.address-info {
+  position: relative;
+}
+
+#icon {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  filter: brightness(50%);
+  padding-left: 0.5rem;
+}
+select,
+select option {
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+}
+
+select option:hover {
+  color: var(--primary);
+  background-color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.address-info input::placeholder {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .progress-table-wrap {
+    overflow-x: scroll;
+  }
+}

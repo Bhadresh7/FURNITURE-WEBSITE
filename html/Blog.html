@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/Blog/blog.css">
+    <link rel="stylesheet" href="/css/home/footer.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <main>
+
+
+        <!-- header  -->
+        <header>
+            <nav>
+                <div>
+                    <svg id="menu-icon" class="menu-icon open-icon" xmlns="http://www.w3.org/2000/svg" height="32px"
+                        viewBox="0 -960 960 960" width="32px" fill="#000000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                    <svg id="close-icon" class="menu-icon close-icon" xmlns="http://www.w3.org/2000/svg" height="32px"
+                        viewBox="0 -960 960 960" width="32px" fill="#000000">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </div>
+                <div class="links-container" id="links-container">
+                    <a href="/html/index.html" class="home-link">Home</a>
+                    <a href="/html/about.html">About</a>
+                    <div class="dropdown mb-4">
+                        <a href="javascript:void(0);" class="toggle-dropdown">Work</a>
+                        <div class="dropdown-content">
+                            <a href="/html/projects.html">Projects</a>
+                            <a href="/html/project-details.html">Project Details</a>
+                        </div>
+                    </div>
+                    <div class="dropdown mb-4">
+                        <a href="/html/service.html" class="toggle-dropdown">Services</a>
+                    </div>
+                    <div class="dropdown mb-4">
+                        <a href="javascript:void(0);" class="toggle-dropdown">Pages</a>
+                        <div class="dropdown-content">
+                            <a href="/html/Elements.html" class="toggle-dropdown">Elements</a>
+                        </div>
+                    </div>
+                    <div class="dropdown mb-4">
+                        <a href="javascript:void(0);" class="toggle-dropdown">Blog</a>
+                        <div class="dropdown-content">
+                            <a href="/html/Blog.html">Blog</a>
+                            <a href="/html/Blog-details.html">Blog Details</a>
+                        </div>
+                    </div>
+                    <a href="/html/contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <nav>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div id="slider-container">
+                            <div id="background-image">
+                                <img src="/images/chair.png" alt="chair" class="img">
+                            </div>
+                        </div>
+                        <div id="slider-container" class="swiper-slide">
+                            <div id="background-image">
+                                <img src="/images/chair.png" alt="chair" class="img">
+                            </div>
+                            <div id="slider-text" class="custom-container">
+                                <h1 class="display-4">Precise
+                                    <br>
+                                    Concept Design
+                                    <br>
+                                    for Posh living
+                                </h1>
+                                <p id="para">
+                                    If you are looking at blank cassettes on the web, you may be very confused at the
+                                    difference
+                                    in
+                                    price. You may
+                                    see some for as low as $.17 each. You may be saying to yourself,</p>
+                                <button id="btn-container">
+                                    Learn More About Precise Design <span><img src="/images/white-arrow.png" alt="Arrow"
+                                            height="50" width="50"></span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div id="slider-container" class="swiper-slide">
+                            <div id="background-image">
+                                <img src="/images/chair.png" alt="chair" class="img">
+                            </div>
+                            <div id="slider-text" class="container">
+                                <h1 class="display-4 ">Precise
+                                    <br>
+                                    Concept Design
+                                    <br>
+                                    for Posh living
+                                </h1>
+                                <p id="para">
+                                    If you are looking at blank cassettes on the web, you may be very confused at the
+                                    difference
+                                    in
+                                    price. You may
+                                    see some for as low as $.17 each. You may be saying to yourself,</p>
+                                <button id="btn-container">
+                                    Learn More About Precise Design <span><img src="/images/white-arrow.png" alt="Arrow"
+                                            height="50" width="50"></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="arrow-container">
+                <img src="/images/black-arrow.png" alt="arrow">
+                <img src="/images/black-arrow.png" alt="arrow">
+            </div>
+        </header>
+
+
+        <!-- Blog-section  -->
+        <section class="custom-container" id="Blog-section">
+            <section class="row">
+                <div class="col-lg-8">
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="text">
+                                <div class="links-container">
+                                    <p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#">Food,</a>
+                                        <a href="#"><span>Technology,</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"> Lifestyle</a>
+                                        <a href="#">Politics,</a>
+                                    </div>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">Mark wiens</a>
+                                        <i class="fa-regular fa-user"></i>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">12 Dec, 2017</a>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">1.2M Views</a>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">06 Comments</a>
+                                        <i class="fa-regular fa-comment"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="middle-section">
+                                <img src="https://preview.colorlib.com/theme/loaft/img/blog/main-blog/m-blog-1.jpg"
+                                    alt="" class="img-fluid w-100">
+                                <h4>Astronomy Binoculars A Great Alternative</h4>
+                                <p>MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you should have to spend money on boot camp when you can get the
+                                    MCSE study materials yourself at a fraction.</p>
+                                <a href="/html/Blog-details.html">View More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="text">
+                                <div class="links-container">
+                                    <p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#">Food,</a>
+                                        <a href="#"><span>Technology,</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"> Lifestyle</a>
+                                        <a href="#">Politics,</a>
+                                    </div>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">Mark wiens</a>
+                                        <i class="fa-regular fa-user"></i>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">12 Dec, 2017</a>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">1.2M Views</a>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">06 Comments</a>
+                                        <i class="fa-regular fa-comment"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="middle-section">
+                                <img src="https://preview.colorlib.com/theme/loaft/img/blog/main-blog/m-blog-2.jpg"
+                                    alt="" class="img-fluid w-100">
+                                <h4>Astronomy Binoculars A Great Alternative</h4>
+                                <p>MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you should have to spend money on boot camp when you can get the
+                                    MCSE study materials yourself at a fraction.
+                                </p>
+                                <a href="/html/Blog-details.html">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="text">
+                                <div class="links-container">
+                                    <p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#">Food,</a>
+                                        <a href="#"><span>Technology,</span></a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"> Lifestyle</a>
+                                        <a href="#">Politics,</a>
+                                    </div>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">Mark wiens</a>
+                                        <i class="fa-regular fa-user"></i>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">12 Dec, 2017</a>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">1.2M Views</a>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">06 Comments</a>
+                                        <i class="fa-regular fa-comment"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="middle-section">
+                                <img src="https://preview.colorlib.com/theme/loaft/img/blog/main-blog/m-blog-3.jpg"
+                                    alt="" class="img-fluid w-100">
+                                <h4>Astronomy Binoculars A Great Alternative</h4>
+                                <p>MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you should have to spend money on boot camp when you can get the
+                                    MCSE study materials yourself at a fraction.</p>
+                                <a href="/html/Blog-details.html">View More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="text">
+                                <div class="links-container">
+                                    <p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#">Food,</a>
+                                        <a href="#"><span>Technology,</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"> Lifestyle</a>
+                                        <a href="#">Politics,</a>
+                                    </div>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">Mark wiens</a>
+                                        <i class="fa-regular fa-user"></i>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">12 Dec, 2017</a>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">1.2M Views</a>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">06 Comments</a>
+                                        <i class="fa-regular fa-comment"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="middle-section">
+                                <img src="https://preview.colorlib.com/theme/loaft/img/blog/main-blog/m-blog-4.jpg"
+                                    alt="" class="img-fluid w-100">
+                                <h4>Astronomy Binoculars A Great Alternative</h4>
+                                <p>MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you should have to spend money on boot camp when you can get the
+                                    MCSE study materials yourself at a fraction.</p>
+                                <a href="/html/Blog-details.html">View More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="text">
+                                <div class="links-container">
+                                    <p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#">Food,</a>
+                                        <a href="#"><span>Technology,</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"> Lifestyle</a>
+                                        <a href="#">Politics,</a>
+                                    </div>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">Mark wiens</a>
+                                        <i class="fa-regular fa-user"></i>
+                                    </p>
+                                    <p class="hover">
+                                        <a href="/html/Blog.html">12 Dec, 2017</a>
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">1.2M Views</a>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </p>
+                                    <p>
+                                        <a href="/html/Blog.html">06 Comments</a>
+                                        <i class="fa-regular fa-comment"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="middle-section">
+                                <img src="https://preview.colorlib.com/theme/loaft/img/blog/main-blog/m-blog-5.jpg"
+                                    alt="" class="img-fluid w-100">
+                                <h4>Astronomy Binoculars A Great Alternative</h4>
+                                <p>MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you should have to spend money on boot camp when you can get the
+                                    MCSE study materials yourself at a fraction.</p>
+                                <a href="/html/Blog-details.html">View More</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div class="pagination-container mb-lg-5">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&#60;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">01</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">02</a></li>
+                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                <li class="page-item"><a class="page-link" href="#">09</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&#62;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right section  -->
+                <div class="col-lg-4 col-md-10  custom-container" id="right-container">
+                    <div class=" input-container" style="margin-bottom: 1rem;">
+                        <input type="text" placeholder="Search Posts">
+                        <img src="/images/search.png" alt="dddd" height="20">
+                    </div>
+                    <br>
+                    <hr>
+                    <div id="profile-section">
+                        <img src="https://preview.colorlib.com/theme/loaft/img/blog/author.png" alt=""
+                            class="img-fluid">
+                        <h5>Charlie Barber</h5>
+                        <h6>Senior blog writer</h6>
+
+                        <div class="links mb-3">
+                            <a href="#"><img src="/images/facebook.png" alt="" height="13"></a>
+                            <a href="#"><img src="/images/twitter.png" alt="" height="13"></a>
+                            <a href="#"><img src="/images/github.png" alt="" height="13"></a>
+                            <a href="#"><img src="/images/behance.png" alt="" height="20"></a>
+                        </div>
+                        <p id="right-para">Boot camps have its supporters andit sdetractors. Some people do not
+                            understand why you should have to spend money on boot camp when you can get. Boot camps have
+                            itssuppor ters
+                            andits detractors.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <section class="mt-3 mb-3">
+                        <div id="popular-post">
+                            Popular Posts
+                        </div>
+                        <div class="image-section mt-4">
+                            <img src="https://preview.colorlib.com/theme/loaft/img/blog/popular-post/post1.jpg.webp"
+                                alt="img" class="img-fluid">
+                            <div class="space">
+                                <a href="/html/Blog-details.html">Space The Final Frontier</a>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="image-section mt-4">
+                            <img src="https://preview.colorlib.com/theme/loaft/img/blog/popular-post/post2.jpg"
+                                alt="img" class="img-fluid">
+                            <div class="space">
+                                <a href="/html/Blog-details.html">Space The Final Frontier</a>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="image-section mt-4">
+                            <img src="https://preview.colorlib.com/theme/loaft/img/blog/popular-post/post3.jpg.webp"
+                                alt="img" class="img-fluid">
+                            <div class="space">
+                                <a href="/html/Blog-details.html">Space The Final Frontier</a>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="image-section mt-4">
+                            <img src="https://preview.colorlib.com/theme/loaft/img/blog/popular-post/post4.jpg.webp"
+                                alt="img" class="img-fluid">
+                            <div class="space">
+                                <a href="/html/Blog-details.html">Space The Final Frontier</a>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+
+                    <a href="#" class="placeholder mt-5 mb-5">
+                        <img src="https://placehold.co/320x250/FFF/D3D3D3/?text=300X250 PX\nAD GOES HERE" alt=""
+                            class="img-fluid">
+                    </a>
+                    <hr>
+
+                    <!-- links section  -->
+                    <section id="post-catgories" class="mb-3">
+                        <div id="popular-post" class="mt-5">
+                            Post Categories
+                        </div>
+                        <li class="mt-4">
+                            <a href="#">
+                                <p>Technology</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lifestyle</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Fashion</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Art</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Food</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Architecture</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Adventure</p>
+                                <p>37</p>
+                            </a>
+                        </li>
+                    </section>
+                    <hr>
+                    <!-- newsletter-section -->
+                    <section class="newsletter-section mt-3 mb-4">
+                        <div id="popular-post">
+                            Newsletter
+                        </div>
+
+                        <p class="text-center mt-4" id="info">
+                            Here, I focus on a range of items and
+                            features that we use in life without giving them a
+                            second thought.
+                        </p>
+                        <div id="input-area">
+                            <div class="input-group d-flex flex-row flex-nowrap mb-3">
+                                <input type="email" placeholder="Enter email address" class="w-100">
+                                <button class="p-2" style="color: white;">Subscribe</button>
+                            </div>
+                            <p class="text-center">You can unsubscribe at any time</p>
+                        </div>
+                    </section>
+                    <hr>
+
+                    <!-- btn section  -->
+                    <section class="mt-5">
+                        <div id="popular-post">
+                            Tag Clouds
+                        </div>
+                        <div id="links-section">
+                            <a href="#">Technology</a>
+                            <a href="#">Fashion</a>
+                            <a href="#">Architecture</a>
+                            <a href="#">Fashion</a>
+                            <a href="#">Food</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Art</a>
+                            <a href="#">Architecture</a>
+                            <a href="#">Food</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+        </section>
+
+        <footer class="mt-5">
+            <div class="custom-container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6 mt-5">
+                        <h4 class="mb-4">About Me</h4>
+                        <p class="mb-3">Do you want to be even more successful? Learn to love learning and growth. The
+                            more effort
+                            you put into improving your skills,</p>
+                        <p style="color: grey;">Copyright ©2024 All rights reserved 🤍 This template is made with by
+                            <span style="color:#f5ca56;">Colorlib</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-sm-6 mt-5">
+                        <h4 class="mb-4">Newsletter</h4>
+                        <p class="mb-3">Stay updated with our latest trends</p>
+                        <div class="input-group d-flex flex-row">
+                            <input type="email" placeholder="Enter email address" class="w-75">
+                            <button class="p-2" style="color: white;"><i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mt-5">
+                        <h4 class="mb-4">Follow Me</h4>
+                        <p class="mb-3">Let us be social</p>
+                        <div class="icons">
+                            <img src="/images/facebook.png" alt="" width="15" height="15">
+                            <img src="/images/twitter.png" alt="" width="15" height="15">
+                            <img src="/images/dribble.png" alt="" width="15" height="15">
+                            <img src="/images/behance.png" alt="" width="15" height="15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- bootstrap  -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/nav.js"></script>
+
+</body>
+
+</html>

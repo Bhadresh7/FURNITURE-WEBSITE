@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --yellow: #f5ca56;
+  --black: #000410;
+  --text-color: #777777;
+  --font1: "Rajdhani", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --white: #fff;
+}
+#info-section {
+  font-family: var(--font1);
+  margin-top: 5rem;
+}
+
+#info-section span {
+  color: var(--yellow);
+}
+
+#content {
+  padding-right: 2rem; 
+}
+
+#content p {
+  max-width: 30rem;
+  font-size: clamp(12px, 5vw, 13px);
+  font-family: var(--font2);
+  color: var(--text-color);
+}
+
+#content h1 {
+  font-size: clamp(35px, 5vw, 40px);
+  font-weight: 600;
+  line-height: 3rem;
+  font-family: var(--font1);
+}
+
+#content img {
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+}
+
+
+.right-section h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.right-section p {
+  font-family: var(--font2);
+  font-size: clamp(12px, 5vw, 15px);
+  color: var(--text-color);
+  line-height: 1.5rem;
+  max-width: 80%;
+  overflow-wrap: break-word; 
+}
+
+.right-section button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--font2);
+  font-size: clamp(12px, 5vw, 15px);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.right-section button img {
+  margin-left: 10px;
+}
+
+.right-section button:hover {
+  color: var(--yellow);
+  transition: all 0.3s ease;
+}
+
+.right-section button:hover img {
+  transform: translateX(20%);
+  transition: all 0.3s ease;
+}
+
+#offset-section {
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+#gallery-section {
+  font-family: var(--font1);
+}
+#gallery-section span{
+color: var(--yellow);
+}
+
+
+@media(max-width:750px){
+  #image{
+    display: none;
+  }
+}
